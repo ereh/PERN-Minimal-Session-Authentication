@@ -6,7 +6,7 @@ export const Home = () => {
   const auth = useAuth();
   const [users, setUsers] = useState();
 
-  useEffect((auth) => {
+  useEffect(() => {
     const getUsers = async () => {
       try {
         const response = await api.get("/users");
